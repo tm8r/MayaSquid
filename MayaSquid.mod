@@ -1,2 +1,2 @@
-+ MayaSquid 1.0 /Users/tm8r/Documents/dev/MayaSquid
++ MayaSquid 1.0 .
 PYTHONPATH+:=python

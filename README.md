@@ -3,7 +3,7 @@
 Tools for Maya.
 
 ## Install
-まずリポジトリをクローン、もしくはダウンロードしたzipを解凍してください。\
+まずリポジトリをクローン、もしくは[release](https://github.com/tm8r/MayaSquid/releases/)よりダウンロードしたzipを解凍してください。\
 次に、`MayaSquid.mod` を `MAYA_MODULE_PATH` が通ったところにコピーし、ファイルの1行目の「.」を解凍先のパスに書き換えてください。
 ```
 + MayaSquid 1.0 /Users/tm8r/Documents/MayaSquid

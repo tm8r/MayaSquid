@@ -12,8 +12,11 @@ Tools for Maya.
 ```
 MAYA_MODULE_PATH=/Users/tm8r/Documents/MayaSquid
 ```
+上記の作業後にMayaを起動してメニューバーに「Squid」が追加されていれば成功です。
 
 ## Inspector
+メニューバーのSquid>Inspectorから起動します。
+
 選択ノードのMaterial、Constraintといった情報にアクセスしやすくします。
 ![maya_inspector](https://user-images.githubusercontent.com/1896961/54471737-474e6d00-4801-11e9-967f-621b8dce2de9.gif)
 

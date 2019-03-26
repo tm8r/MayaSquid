@@ -12,6 +12,8 @@ Tools for Maya.
 ```
 MAYA_MODULE_PATH=/Users/tm8r/Documents/MayaSquid
 ```
+※既にMaya.envにMAYA_MODULE_PATHが設定されている場合は、その行の末尾に「;」を追加し、その後にパスを追記してください。
+
 上記の作業後にMayaを起動してメニューバーに「Squid」が追加されていれば成功です。
 
 ## Inspector

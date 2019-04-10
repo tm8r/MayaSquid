@@ -3,6 +3,7 @@ u"""インスペクタのView"""
 from __future__ import absolute_import, division, print_function
 
 from squid.core.libs.maya.layout import delete_window
+from squid.core.libs.maya.layout import delete_workspace_control
 from squid.core.libs.qt import maya_window
 from squid.core.libs.qt.layout import clear_layout
 from squid.core.libs.qt.stylesheet import StyleSheet
@@ -36,8 +37,7 @@ class Inspector(maya_window.MayaDockableWindow):
     def open(cls, *args):
         u"""UIを表示"""
         delete_window(cls.window_name())
-        if cmds.workspaceControl(cls.workspace_control_name(), ex=True):
-            cmds.deleteUI(cls.workspace_control_name())
+        delete_workspace_control(cls.workspace_control_name())
         win = cls()
         ui_script = cls.ui_script()
         win.show(dockable=True, uiScript=ui_script)

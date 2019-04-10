@@ -6,6 +6,7 @@ from squid.core.libs.maya import blend_shape
 from squid.core.libs.qt.widgets import collapse_widget
 from squid.tools.inspector.panels import panel_base
 
+from squid.vendor.Qt import QtCore
 from squid.vendor.Qt import QtWidgets
 
 
@@ -31,6 +32,7 @@ class BlendShapePanel(panel_base.PanelBase):
         root_layout.addWidget(material_widget)
 
         tree_widget = QtWidgets.QTreeWidget()
+        tree_widget.setFocusPolicy(QtCore.Qt.NoFocus)
         tree_widget.setHeaderHidden(True)
         tree_widget.setColumnCount(1)
 

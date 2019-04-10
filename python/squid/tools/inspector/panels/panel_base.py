@@ -5,7 +5,7 @@ from __future__ import absolute_import, division, print_function
 from abc import ABCMeta
 from abc import abstractmethod
 
-import six
+from squid.vendor import six
 
 from squid.vendor.Qt import QtCore
 from squid.vendor.Qt import QtWidgets

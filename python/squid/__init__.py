@@ -2,5 +2,5 @@
 from __future__ import absolute_import, division, print_function
 
 __title__ = "MayaSquid"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __copyright__ = "tm8r"

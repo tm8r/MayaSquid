@@ -6,6 +6,7 @@ from squid.core.libs.maya import constraint
 from squid.core.libs.qt.widgets import collapse_widget
 from squid.tools.inspector.panels import panel_base
 
+from squid.vendor.Qt import QtCore
 from squid.vendor.Qt import QtWidgets
 
 
@@ -31,6 +32,7 @@ class ConstraintPanel(panel_base.PanelBase):
         const_widget = collapse_widget.QCollapseWidget("Constraints")
         root_layout.addWidget(const_widget)
         tree_widget = QtWidgets.QTreeWidget()
+        tree_widget.setFocusPolicy(QtCore.Qt.NoFocus)
         tree_widget.setIndentation(0)
         tree_widget.setHeaderHidden(True)
         tree_widget.setColumnCount(2)

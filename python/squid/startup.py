@@ -5,6 +5,7 @@ from __future__ import absolute_import, division, print_function
 from squid import __title__
 from squid import __version__
 from squid.core.libs.maya import layout
+from squid.tools.fbx_importer.view import FBXImporter
 from squid.tools.inspector.view import Inspector
 
 import maya.cmds as cmds
@@ -29,6 +30,7 @@ def _create_menu():
 
     cmds.setParent(_MENU_ROOT, menu=True)
     cmds.menuItem(l="Inspector", c=Inspector.open)
+    cmds.menuItem(l="FBX Importer", c=FBXImporter.open)
 
     cmds.menuItem(d=True, p=_MENU_ROOT)
     cmds.menuItem(l=u"Version: {0}({1})".format(__title__, __version__), p=_MENU_ROOT, en=False)

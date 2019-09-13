@@ -1,0 +1,60 @@
+QPushButton#ok_button {
+    background-color: #00b4ee;
+}
+
+QPushButton#ok_button:disabled {
+    background-color: #007aa2;
+}
+
+QLabel#tool_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+QTabWidget::pane {
+    border: 1px solid #2b2b2b;
+    position: absolute;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #373737;
+    border: 1px solid #2b2b2b;
+    border-bottom-color: #373737; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 4px 8px;
+    margin-top: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: #444;
+    border-bottom-color: #444;
+    margin-top: 0px;
+}
+
+QLabel#h1 {
+    background-color: #666;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+QToolButton#h1 {
+    background-color: #666;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+QFrame#inner {
+    background-color: #494949;
+}
+
+QFrame#header {
+    background-color: #333;
+}
+

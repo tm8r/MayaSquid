@@ -1,3 +1,0 @@
-[submodule "python/squid/core"]
-	path = python/squid/core
-	url = git@github.com:tm8r/MayaSquidCore.git

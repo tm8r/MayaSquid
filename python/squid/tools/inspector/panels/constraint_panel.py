@@ -9,6 +9,8 @@ from squid.tools.inspector.panels import panel_base
 from squid.vendor.Qt import QtCore
 from squid.vendor.Qt import QtWidgets
 
+from maya import cmds
+
 
 class ConstraintPanel(panel_base.PanelBase):
     u"""コンストレイントのパネル"""
@@ -43,14 +45,14 @@ class ConstraintPanel(panel_base.PanelBase):
             for const_type, members in self._constraints.items():
                 for m in members:
                     item = QtWidgets.QTreeWidgetItem()
-                    item.setText(0, "<- {0}({1})".format(m, const_type.name))
+                    item.setText(0, "<- {0}({1})".format(cmds.ls(m)[0], const_type.name))
                     item.setText(1, m)
                     tree_widget.insertTopLevelItem(tree_widget.topLevelItemCount(), item)
         if self._rconstraints:
             for const_type, members in self._rconstraints.items():
                 for m in members:
                     item = QtWidgets.QTreeWidgetItem()
-                    item.setText(0, "-> {0}({1})".format(m, const_type.name))
+                    item.setText(0, "-> {0}({1})".format(cmds.ls(m)[0], const_type.name))
                     item.setText(1, m)
                     tree_widget.insertTopLevelItem(tree_widget.topLevelItemCount(), item)
 

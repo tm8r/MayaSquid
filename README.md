@@ -22,6 +22,12 @@ MAYA_MODULE_PATH=/Users/tm8r/Documents/MayaSquid
 選択ノードのMaterial、Constraintといった情報にアクセスしやすくします。
 ![maya_inspector](https://user-images.githubusercontent.com/1896961/54471737-474e6d00-4801-11e9-967f-621b8dce2de9.gif)
 
+## FBXImporter
+メニューバーのSquid>FBXImporterから起動します。
+![fbx_importer](https://user-images.githubusercontent.com/1896961/65010402-b6d91c80-d94a-11e9-876b-387f01718907.png)
+
+ネームスペース指定してAdd、Merge、ExMergeの操作が可能で、インポートしたものは履歴管理されます。
+
 ## License
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
